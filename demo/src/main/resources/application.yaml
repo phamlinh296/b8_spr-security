@@ -1,0 +1,22 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /demoo
+
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/demo"
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    username: username
+    password: password #nh? MYSQL_PASSWORD, kp pass root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: "sEzN49A5eMzybTam7Km8m5KHpF36Vp+YnVZ/B5VaVsUrHvgDBvnIEy/MznZGVl+5"
+
+#nh? c?p quy?n cho db demo trong dbeaver; k s? l?i
+#?a h?t l?i sao v?n k ch?y ?c postman ta? 400 Bad Request
+#oh do sai c� ph�p postman
