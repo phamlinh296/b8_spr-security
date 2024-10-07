@@ -11,7 +11,11 @@ import org.mapstruct.MappingTarget;
 
 @Mapper(componentModel = "spring")// Kbao interface là một mapper của MapStruct và tích hợp với Spring.
 public interface UserMapper {
-    @Mapping(source = "firstName", target = "firstName")//thêm vào cho chắc, k thêm lúc đc lúc ko
+//    @Mapping(source = "firstName", target = "firstName")//thêm vào cho chắc, k thêm lúc đc lúc ko
+//    @Mapping(source = "username", target = "username")
+//    @Mapping(source = "password", target = "password")
+//    @Mapping(source = "lastName", target = "lastName")
+//    @Mapping(source = "dob", target = "dob")
     User toUser(@Valid UserCreationRequest request); // ánh xạ các thuộc tính từ UserCreationRequest sang User.
     void updateUser (@MappingTarget User user, UserCreationRequest request);//@MappingTarget để map 2 cái này vào
 //    @Mapping(source = "firstName", target = "lastName")//map first của user mình get ra sang last của userresponse, trả ra màn. VD: user có first= hanh >> last của userrespone=hanh; và first của response vẫn map btg= hanh

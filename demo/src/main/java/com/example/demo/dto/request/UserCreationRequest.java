@@ -9,6 +9,8 @@ import java.time.LocalDate;
 //@Getter
 //@Setter
 @Data //các dto hay dùng luôn Data (=getter, set, equals() và hashCode(),toString():, Constructor:)
+@Getter
+@Setter
 @NoArgsConstructor //tự tạo cons ko tham số (khi truyền dl theo consturct)
 @AllArgsConstructor //tạo cons có tham số
 @Builder //nhớ thêm ms tạo đc đtg theo buider(); (ko truyền theo construct)
